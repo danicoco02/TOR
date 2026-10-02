@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ff7a00"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Tryout Ready"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-192.png"><title>Tryout Ready</title><link rel="stylesheet" href="style.css"></head><body><div id="app"><header class="top"><div class="brand"><span>🏀</span><div><b>TRYOUT READY</b><small>Basketball Development System</small></div></div><button id="settingsBtn" class="round">⚙</button></header><main id="main"></main><nav id="nav"><button data-page="home">⌂<small>Home</small></button><button data-page="train">▶<small>Train</small></button><button data-page="drills">🏀<small>Drills</small></button><button data-page="stats">▥<small>Stats</small></button><button data-page="coach">★<small>Coach</small></button></nav></div><dialog id="modal"><button id="closeModal" class="close">×</button><div id="modalBody"></div></dialog><script src="script.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./service-worker.js')
+    .catch(err => console.warn('Service worker registration failed:', err)));
+}
+</script></body></html>
